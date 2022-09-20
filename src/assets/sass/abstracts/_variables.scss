@@ -1,13 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+@font-face {
+	font-family: "Myriad Pro Black";
+	src: url("myriadPro-Black.otf");
+}
+@font-face {
+	font-family: "Myriad Pro Cond Bold";
+	src: url("myriadPro-Bold-Cond.ttf");
+}
+@font-face {
+	font-family: "Myriad Pro Cond";
+	src: url("myriadPro-Cond.otf");
+}
+@font-face {
+	font-family: "Myriad Pro Cond Light";
+	src: url("myriadPro-LightCond.otf");
+}
+
 
 :root {
 	// Fonts
-	--heading-font: "Inter", sans-serif;
-	--body-font: "Assistant", sans-serif;
+	--heading-font: "Myriad Pro Cond Bold", sans-serif;
+	--body-font: "Myriad Pro Cond Light", sans-serif;
 
 	//Colors
-	--heading: #0B090C;
-	--body: #0B090C;
+	--heading: #0b090c;
+	--body: #0b090c;
 
-	--base: #FAA537;
+	--base: #faa537;
 }

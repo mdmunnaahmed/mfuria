@@ -1,15 +1,83 @@
 .banner-section {
-	padding: 100px 0 120px;
-	background-color: #f9a347;
+	position: relative;
+	padding: 90px 0 120px;
+	background-image: -moz-linear-gradient(-45deg, rgb(246, 179, 50) 0%, rgb(206, 161, 118) 50%, rgb(133, 117, 78) 100%);
+	background-image: -webkit-linear-gradient(-45deg, rgb(246, 179, 50) 0%, rgb(206, 161, 118) 50%, rgb(133, 117, 78) 100%);
+	background-image: -ms-linear-gradient(-45deg, rgb(246, 179, 50) 0%, rgb(206, 161, 118) 50%, rgb(133, 117, 78) 100%);
+	z-index: 1;
+	@include breakpoint(max-lg) {
+		padding-top: 70px;
+		padding-bottom: 90px;
+	}
+	@include breakpoint(max-md) {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+}
+.banner-shape {
+	position: absolute;
+	top: 0;
+	right: 50px;
+	bottom: 0;
+	object-fit: contain;
+	height: 100%;
+	z-index: -1;
 }
 .banner-content {
 	text-align: center;
 }
 .banner-top-title {
-    font-style: italic;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 70px;
+	@include breakpoint(max-xl) {
+		font-size: 60px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 56px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 46px;
+	}
 }
 .banner-bottom-title {
-    font-style: italic;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 70px;
+	color: #fff;
+	@include breakpoint(max-xl) {
+		font-size: 60px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 56px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 46px;
+	}
 }
 .banner-pera {
+	color: #fff;
+	font-family: "Myriad Pro Cond Light";
+	font-weight: 400;
+	font-size: 50px;
+	margin-top: 65px;
+	@include breakpoint(max-xl) {
+		font-size: 45px;
+		margin-top: 45px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 35px;
+		margin-top: 35px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 30px;
+		margin-top: 25px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 26px;
+	}
+	span {
+		display: inline;
+		font-family: "Myriad Pro Cond Bold";
+	}
 }
