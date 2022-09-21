@@ -577,4 +577,22 @@ h6 {
         font-size: 22px;
     }
 }
+
+.modal-text {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .modal-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-text {
+        font-size: 22px;
+    }
+}
 /*# sourceMappingURL=main.css.map */
